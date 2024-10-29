@@ -10,21 +10,29 @@ export default function Home() {
       {/* Content with overflow hidden */}
       <div className="relative w-full h-full overflow-hidden flex-grow">
         {/* Animations for the boxes */}
-        <div className="w-full h-[25%] bg-neutral-950 rounded-3xl absolute top-0 left-0 animate-slide-off-up delay-[1s]" />
-        <div className="w-full h-full bg-neutral-950 rounded-3xl absolute top-0 left-0 animate-slide-off-left delay-[1s]" />
-        <div className="w-full h-[25%] bg-neutral-950 rounded-3xl absolute bottom-0 left-0 animate-slide-off-down delay-[1s]" />
-        <div className="w-full h-full bg-neutral-950 rounded-3xl absolute top-0 right-0 animate-slide-off-right delay-[1s]" />
+        <div className="w-full h-[25%] bg-neutral-950 rounded-3xl absolute top-0 left-0 animate-slide-off-up " />
+        <div className="w-full h-full bg-neutral-950 rounded-3xl absolute top-0 left-0 animate-slide-off-left " />
+        <div className="w-full h-[25%] bg-neutral-950 rounded-3xl absolute bottom-0 left-0 animate-slide-off-down " />
+        <div className="w-full h-full bg-neutral-950 rounded-3xl absolute top-0 right-0 animate-slide-off-right " />
       </div>
       
       {/* Navbar at the top */}
-      <div className="w-full h-[10%] fixed flex items-center justify-center mx-auto animate-fadein">
+      <div className="w-full h-[10%] flex fixed items-center justify-center mx-auto animate-fadein">
         <ul className="list-none sm:flex flex-row gap-20">
-          <li className="text-white">Home</li>
-          <li className="text-white">About</li>
-          <li className="text-white">Projects</li>
-          <li className="text-white">Contact</li>
+          <li className="text-white"><a href="#Home">Home</a></li>
+          <li className="text-white"><a href="#Education">Education</a></li>
+          <li className="text-white"><a href="#Project">Projects</a></li>
+          <li className="text-white"><a href="#Skills">Skills</a></li>
+          <li className="text-white"><a href="#Contact">Contact Me</a></li>
         </ul>
       </div>
+
+      {/* Main content */}
+      <div><span id="Home" className=""></span></div>
+      <div><span id="Education"></span></div>
+      <div><span id="Project"></span></div>
+      <div><span id="Skills"></span></div>
+      <div><span id="Contact"></span></div>
     </div>
   );
 }
