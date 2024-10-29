@@ -10,10 +10,10 @@ export default function Home() {
       {/* Content with overflow hidden */}
       <div className="relative w-full h-full overflow-hidden flex-grow">
         {/* Animations for the boxes */}
-        <div className="w-full h-[25%] bg-neutral-950 rounded-3xl absolute top-0 left-0 animate-slide-off-up " />
-        <div className="w-full h-full bg-neutral-950 rounded-3xl absolute top-0 left-0 animate-slide-off-left " />
-        <div className="w-full h-[25%] bg-neutral-950 rounded-3xl absolute bottom-0 left-0 animate-slide-off-down " />
-        <div className="w-full h-full bg-neutral-950 rounded-3xl absolute top-0 right-0 animate-slide-off-right " />
+        <div className="w-full h-full bg-neutral-950 rounded-3xl absolute bottom-0 animate-slide-off-up " />
+        <div className="w-full h-full bg-neutral-950 rounded-3xl absolute top-0  animate-slide-off-left " />
+        <div className="w-full h-full bg-neutral-950 rounded-3xl absolute top-0  animate-slide-off-down " />
+        <div className="w-full h-full bg-neutral-950 rounded-3xl absolute top-0  animate-slide-off-right " />
       </div>
       
       {/* Navbar at the top */}
@@ -28,11 +28,35 @@ export default function Home() {
       </div>
 
       {/* Main content */}
-      <div><span id="Home" className=""></span></div>
-      <div><span id="Education"></span></div>
-      <div><span id="Project"></span></div>
-      <div><span id="Skills"></span></div>
-      <div><span id="Contact"></span></div>
+      <div>
+        <span id="Home" className="">
+        
+        </span>
+      </div>
+
+      <div>
+        <span id="Education">
+        
+        </span>
+      </div>
+
+      <div>
+        <span id="Project">
+        
+        </span>
+      </div>
+
+      <div>
+        <span id="Skills">
+        
+        </span>
+      </div>
+      
+      <div>
+        <span id="Contact">
+        
+        </span>
+      </div>
     </div>
   );
 }

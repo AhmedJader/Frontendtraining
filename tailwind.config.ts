@@ -21,22 +21,31 @@ const config: Config = {
       keyframes: {
         slideOffLeft: {
           '0%': { transform: 'translateX(0)' },
+          '0': { opacity: '0' },
           '100%': { transform: 'translateX(-100vw)' },
+          '100': { opacity: '1' },
+          
         },
         slideOffRight: {
           '0%': { transform: 'translateX(0)' },
+          '0': { opacity: '0' },
           '100%': { transform: 'translateX(100vw)' },
+          '100': { opacity: '1' },
         },
         slideOffUp: {
           '0%': { transform: 'translateY(0)' },
+          '0': { opacity: '0' },
           '100%': { transform: 'translateY(-100vh)' },
+          '100': { opacity: '1' },
         },
         slideOffDown: {
           '0%': { transform: 'translateY(0)' },
+          '0': { opacity: '0' },
           '100%': { transform: 'translateY(100vh)' },
+          '100': { opacity: '1' },
         },
         fadein: {
-          '0%': { opacity: '0' },      
+          '0%': { opacity: '0' },  
           '100%': { opacity: '1' },
         },
       },
@@ -45,7 +54,7 @@ const config: Config = {
         'slide-off-right': 'slideOffRight 1s ease forwards',
         'slide-off-up': 'slideOffUp 1s ease forwards',
         'slide-off-down': 'slideOffDown 1s ease forwards',
-        'fadein': 'fadein 7s ease forwards'
+        'fadein': 'fadein 5s ease-in',
       },
     },
   },
