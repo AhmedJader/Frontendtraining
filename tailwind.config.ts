@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
-
 const svgToDataUri = require("mini-svg-data-uri");
- 
+
 const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
@@ -18,6 +17,30 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      keyframes: {
+        slideOffLeft: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100vw)' },
+        },
+        slideOffRight: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(100vw)' },
+        },
+        slideOffUp: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(-100vh)' },
+        },
+        slideOffDown: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(100vh)' },
+        },
+      },
+      animation: {
+        'slide-off-left': 'slideOffLeft 1.5s ease forwards',
+        'slide-off-right': 'slideOffRight 1.5s ease forwards',
+        'slide-off-up': 'slideOffUp 1.5s ease forwards',
+        'slide-off-down': 'slideOffDown 1.5s ease forwards',
       },
     },
   },
@@ -46,4 +69,5 @@ const config: Config = {
     },
   ],
 };
+
 export default config;
