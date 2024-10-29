@@ -35,12 +35,17 @@ const config: Config = {
           '0%': { transform: 'translateY(0)' },
           '100%': { transform: 'translateY(100vh)' },
         },
+        fadein: {
+          '0%': { opacity: '0' },      
+          '100%': { opacity: '1' },
+        },
       },
       animation: {
-        'slide-off-left': 'slideOffLeft 1.5s ease forwards',
-        'slide-off-right': 'slideOffRight 1.5s ease forwards',
-        'slide-off-up': 'slideOffUp 1.5s ease forwards',
-        'slide-off-down': 'slideOffDown 1.5s ease forwards',
+        'slide-off-left': 'slideOffLeft 1s ease forwards',
+        'slide-off-right': 'slideOffRight 1s ease forwards',
+        'slide-off-up': 'slideOffUp 1s ease forwards',
+        'slide-off-down': 'slideOffDown 1s ease forwards',
+        'fadein': 'fadein 7s ease forwards'
       },
     },
   },
