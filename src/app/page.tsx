@@ -4,6 +4,12 @@ import React from "react";
 export default function Home() {
   return (
     <div className="h-screen w-full dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex flex-col">{/* Container */}
+      {/* intro screen */}
+      <div id="Home" className="absolute w-full h-full bg-neutral-950 flex items-center justify-center animate-fadeout2">
+        <h1 className="text-center text-white text-6xl font-bold animate-fadeout">Hello, Welcome to my portfolio site</h1>
+      </div>
+      
+      
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black_50%,black)]" />
       
@@ -29,14 +35,8 @@ export default function Home() {
 
       {/* Main content */}
       <div>
-        <span id="Home" className="">
-        
-        </span>
-      </div>
-
-      <div>
         <span id="Education">
-        
+
         </span>
       </div>
 

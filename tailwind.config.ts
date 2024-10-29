@@ -19,6 +19,10 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       keyframes: {
+        fadeout: {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
         slideOffLeft: {
           '0%': { transform: 'translateX(0)' },
           '0': { opacity: '0' },
@@ -50,6 +54,8 @@ const config: Config = {
         },
       },
       animation: {
+        'fadeout': 'fadeout 3s ease-out forwards',
+        'fadeout2': 'fadeout 4s ease-out forwards',
         'slide-off-left': 'slideOffLeft 1s ease forwards',
         'slide-off-right': 'slideOffRight 1s ease forwards',
         'slide-off-up': 'slideOffUp 1s ease forwards',
