@@ -54,8 +54,8 @@ const config: Config = {
         },
       },
       animation: {
-        'fadeout': 'fadeout 3s ease-out forwards',
-        'fadeout2': 'fadeout 4s ease-out forwards',
+        'fadeout': 'fadeout 4s ease-out forwards',
+        'fadeout2': 'fadeout 3s ease-out 3s forwards;',
         'slide-off-left': 'slideOffLeft 1s ease forwards',
         'slide-off-right': 'slideOffRight 1s ease forwards',
         'slide-off-up': 'slideOffUp 1s ease forwards',

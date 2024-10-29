@@ -5,8 +5,9 @@ export default function Home() {
   return (
     <div className="h-screen w-full dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex flex-col">{/* Container */}
       {/* intro screen */}
-      <div id="Home" className="absolute w-full h-full bg-neutral-950 flex items-center justify-center animate-fadeout2">
-        <h1 className="text-center text-white text-6xl font-bold animate-fadeout">Hello, Welcome to my portfolio site</h1>
+      <div id="Home" className="absolute w-full h-full flex items-center justify-center">
+        <div className="absolute w-full h-full bg-neutral-950 animate-fadeout2"></div>
+        <h1 className="text-center text-white text-6xl font-bold animate-fadeout">Welcome to my Portfolio!</h1>
       </div>
       
       
